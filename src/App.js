@@ -1,12 +1,27 @@
 import React from "react";
+import Accordion from "./components/Accordion";
 
-class App extends React.Component {
-  render() {
-    const name = "Raul";
-    const saludo = `Hello ${name}`;
+const items = [
+  {
+    title: "What is React?",
+    content: "React is a front end javascript Library",
+  },
+  {
+    title: "Why use React?",
+    content: "React is a favorite end JS Library among engineers",
+  },
+  {
+    title: "How do you use React?",
+    content: "You use React by creating components",
+  },
+];
 
-    return <h1>{saludo}</h1>;
-  }
-}
+const App = () => {
+  return (
+    <div>
+      <Accordion />
+    </div>
+  );
+};
 
 export default App;
